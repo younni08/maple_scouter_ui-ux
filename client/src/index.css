@@ -1,0 +1,348 @@
+body {
+  margin: 0;
+}
+/* ______________________________ app _________________________________ */
+.app{
+  display:flex;
+  width:100%;
+  flex-direction: column;
+}
+/* ______________________________ topnavi _________________________________ */
+.topnavi{
+  display: flex;
+  width:100%;
+  background: #3f51b5;
+  height:50px;
+  justify-content: center;
+}
+.topnavi > div{
+  display:flex;
+  height:50px;
+  width:1000px;
+  color:#fff;
+  align-content: center;
+  justify-content: space-between;
+}
+.topnavi > div span{
+  display:flex;
+  align-items: center;
+}
+.topnavi > div > div{
+  display:flex;
+}
+.topnavi > div > div > span:first-child{
+  margin:0px 10px 0px 0px;
+}
+/* ______________________________ scouter _________________________________ */
+.scouter{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  background-color: #f6f6f6;
+  min-height: 100vh;
+}
+.scouter > div{
+  display:flex;
+  flex-direction: column;
+  width:1000px;
+  margin:20px 0px 20vh 0px;
+}
+.scouter_title{
+  display:flex;
+  width:100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #323232;
+}
+.scouter_main{
+  display:flex;
+  width:100%;
+  margin:20px 0px 0px 0px;
+  justify-content: space-between;
+}
+/* ______________________________ scouter _________________________________ */
+.scouter_result{
+  display:flex;
+  flex-direction: column;
+  width:320px;
+}
+.scouter_result_lv1{
+  display:flex;
+  flex-direction: column;
+  background:#fff;
+  width:calc(100% - 22px);
+  border:solid 1px #eaeaea;
+  padding:10px;
+}
+.scouter_result_lv1 > span:nth-child(1){
+  display:flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width:100%;
+  border-bottom: solid 1px #eaeaea;
+  padding:0px 0px 10px 0px;
+  margin:0px 0px 30px 0px;
+}
+.scouter_result_lv1 > span:nth-child(2){
+  display:flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color:#ff0000;
+  width:100%;
+}
+.scouter_result_lv1 > span:nth-child(3){
+  display:flex;
+  width:100%;
+  justify-content: center;
+  color:#ff0000;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.scouter_result_lv1 > div{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  margin:40px 0px 0px 0px;
+}
+.scouter_result_lv1 > div > span:first-child{
+  display:flex;
+  width:calc(70% - 5px);
+  justify-content: center;
+  background:#3f51b5;
+  padding:10px 0px 10px 0px;
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.scouter_result_lv1 > div > span:last-child{
+  display:flex;
+  width:calc(30% - 5px);
+  justify-content: center;
+  background:#5aa49d;
+  padding:10px 0px 10px 0px;
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.scouter_result_lv2{
+  display:flex;
+  flex-direction: column;
+  background:#fff;
+  width:calc(100% - 22px);
+  border:solid 1px #eaeaea;
+  padding:10px;
+  margin:20px 0px 0px 0px;
+}
+.scouter_result_lv2 > span:nth-child(1){
+  display:flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width:100%;
+  border-bottom: solid 1px #eaeaea;
+  padding:0px 0px 10px 0px;
+  margin:0px 0px 10px 0px;
+}
+.scouter_result_lv2 > span.title{
+  display:flex;
+  width:100%;
+  margin:10px 0px 5px 0px;
+  font-weight: bold;
+}
+.scouter_result_lv2 > div.tag{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+  margin:0px 0px 10px 0px;
+}
+.scouter_result_lv2 > div.tag > span{
+  background:#3872fd;
+  color:#fff;
+  padding:2px 5px;
+  margin:0px 10px 5px 0px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.scouter_result_lv2 > div.dmg > span{
+  display:flex;
+  justify-content: center;
+  background:#eaeaea;
+  width:100%;
+  color:#000;
+  font-weight: bold;
+  border-radius: 5px;
+  padding:5px 0px;
+  font-size: 1.1rem;
+}
+/* ______________________________ scouter _________________________________ */
+.scouter_calc{
+  display:flex;
+  flex-direction: column;
+  width:660px;
+}
+.scouter_calc_temp{
+  display:flex;
+  flex-direction: column;
+  width:calc(100% - 22px);
+  padding:10px;
+  background: #fff;
+  border:solid 1px #eaeaea;
+}
+.scouter_calc_temp > span:first-child{
+  display:flex;
+  width:100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  justify-content: center;
+  margin:10px 0px 0px 0px;
+}
+.scouter_calc_temp2{
+  display:flex;
+  flex-direction: column;
+  width:calc(100% - 22px);
+  padding:10px;
+  background: #fff;
+  border:solid 1px #eaeaea;
+  margin:10px 0px 0px 0px;
+}
+.scouter_calc_temp2 > span:first-child{
+  display:flex;
+  width:100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  justify-content: center;
+  margin:10px 0px 0px 0px;
+}
+.scouter_calc_input_temp{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  margin:20px 0px 0px 0px;
+}
+.scouter_calc_input_temp > div{
+  width:calc(50% - 10px);
+}
+.scouter_calc_input_temp2{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  margin:10px 0px 0px 0px;
+}
+.scouter_calc_input_temp2 > div{
+  width:calc(50% - 10px);
+}
+.scouter_calc_input_select{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px 0px 0px 0px;
+}
+.scouter_calc_input_select > span{
+  color:#7f7f7f;
+  width:100px;
+  font-size: 0.9rem;
+}
+.scouter_calc_input_select > div{
+  display:flex;
+  background:#f6f6f6;
+  width:calc(100% - 160px);
+  padding:8px 20px;
+}
+.scouter_calc_input_select > div > select{
+  border:none;
+  background:#f6f6f6;
+  width:100%;
+}
+.scouter_calc_input_number{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px 0px 0px 0px;
+}
+.scouter_calc_input_number > span{
+  color:#7f7f7f;
+  width:100px;
+  font-size: 0.9rem;
+}
+.scouter_calc_input_number > div{
+  display:flex;
+  background:#f6f6f6;
+  width:calc(100% - 160px);
+  padding:8px 20px;
+}
+.scouter_calc_input_number > div > input{
+  border:none;
+  background:#f6f6f6;
+  width:100%;
+}
+.scouter_calc_input_slider{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px 0px 0px 0px;
+}
+.scouter_calc_input_slider > span{
+  color:#7f7f7f;
+  width:100px;
+  font-size: 0.9rem;
+}
+.scouter_calc_input_slider > div{
+  display:flex;
+  width:calc(100% - 150px);
+  padding:8px 20px;
+}
+.scouter_calc_input_slider_div{
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+.scouter_calc_input_slider_div > input{
+  display: none;
+}
+.scouter_calc_input_slider_div > label{
+  display:flex;
+  position:relative;
+  padding:10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.scouter_calc_input_slider_div > label > span{
+  display:flex;
+  font-size: 0.9rem;
+  width:115px;
+  justify-content: center;
+  font-weight: bold;
+  color:#7f7f7f;
+  user-select: none;
+  transition: all 0.3s;
+}
+.scouter_calc_input_slider_div > label > span:first-child{
+  margin:0px 20px 0px 0px;
+}
+.upload_toggle {
+  position: absolute;
+  width:145px;
+  top:0px;
+  right:145px;
+  height:40px;
+  border-radius: 5px;
+  background-color: rgba(97,174,255,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,.15);
+  transition: all 0.3s;
+}
+.upload_content_checkbox:checked + .upload_content_label .upload_toggle{
+  transform: translateX(100%);
+}
+.upload_content_checkbox:not(:checked) + .upload_content_label .button1{
+  color:#000;
+}
+.upload_content_checkbox:checked + .upload_content_label .button2{
+  color:#000;
+}
